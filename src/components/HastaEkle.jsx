@@ -32,6 +32,7 @@ const HastaEkle = ({
     e.preventDefault();
 
     setListe([...liste, hasta]);
+    localStorage.setItem("hastaListesi",JSON.stringify([...liste, hasta]))
   };
   console.log(hasta);
 
@@ -96,7 +97,7 @@ const HastaEkle = ({
                         marginRight: "1rem",
                       }}
                     />
-                    {x.day}
+                    {new Date(x.day).toLocaleString("de-DE","full")}
                   </h5>
                   <h4>
                     <FaUserDoctor

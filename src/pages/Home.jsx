@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import HastaListe from '../components/HastaListe'
-import Data from "./data"
+import Data from "../helper/data"
 import logo from "../helper/logo.png"
+import HastaListe from "../components/HastaListe"
 
 const Home = () => {
 
@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <div>
 
-        <div style={{display:"flex", justifyContent:"center", alignItems:"center" ,gap:"2rem" , margin:"2rem 1rem" }}>
+        <div style={{display:"flex", justifyContent:"flex-start", alignItems:"center" ,gap:"2rem" , margin:"2rem 5rem" }}>
 
-          <img style={{width:"100px", height:"100px"}} src={logo} alt="" />
+          <img style={{width:"100px", height:"100px"}} src={logo} alt="" className='logo'/>
           <h1 style={{fontFamily:"monospace"}}>MEDICAL CENTER</h1>
 
         </div>

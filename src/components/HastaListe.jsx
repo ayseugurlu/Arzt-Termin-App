@@ -4,7 +4,7 @@ import { BsCalendarDate } from "react-icons/bs";
 import { FaUserDoctor } from "react-icons/fa6";
 import { BsPerson } from "react-icons/bs";
 import { doctorData } from '../helper/data';
-import HastaEkle from './HastaEkle';
+import HastaEkle from '../components/HastaEkle';
 
 const HastaListe = ({liste,setListe}) => {
     const [doktor,setDoktor]=useState(false)
@@ -32,23 +32,16 @@ const HastaListe = ({liste,setListe}) => {
     <div  className='doktor-liste'>
     {selected.map(({id,doctorName,doctorImg})=>(
         
-        <div onClick={()=>handleClick(id)}  key={id} className='doktor-card'
-        >
+        <div onClick={()=>handleClick(id)}  key={id} className='doktor-card'>
         <img src={doctorImg} alt="" />
             <p>{doctorName}</p> 
         </div>
 
     ))}
         
-      
-       
-
     </div>
     {doktor? (liste.map((x)=>( 
-        <div 
-        onDoubleClick={()=>setListe(liste.map((a)=> a.id ===x.id ? {...a,bittiMi:!a.bittiMi} : a))}
-
-         key={x.id} className={x.bittiMi? "liste-card2" : "liste-card1"}>
+        <div onDoubleClick={()=>setListe(liste.map((a)=> a.id ===x.id ? {...a,bittiMi:!a.bittiMi} : a))} key={x.id} className={x.bittiMi? "liste-card2" :"liste-card1"}>
 
         <div>
             <h3><BsPerson  style={{color:"purple", fontSize:"1.2rem", marginRight:"1rem"}}/>{x.text}</h3>
@@ -63,6 +56,7 @@ const HastaListe = ({liste,setListe}) => {
 
             </div>
         </div>
+        
 
 
     ))
