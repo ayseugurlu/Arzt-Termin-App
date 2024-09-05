@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+# Arzt Termin App (Doctor Appointment App )
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://arzt-termin-app.netlify.app/
 
-## Available Scripts
+## Project Purpose
 
-In the project directory, you can run:
+The primary objective of this project is to develop a practical application that helps manage doctor appointments. The "Doctor Appointment App" allows users to add, view, check, and delete appointments. This project focuses on understanding and implementing state management using `useState`, handling events, and storing data using Local Storage in a React application.
 
-### `yarn start`
+## Project Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+|--Arzt-Termin-App
+|
+├── public
+│     └── index.html
+├── src
+│    
+│    
+│    
+│    
+│    ├── components
+│    │       ├── HastaEkle.jsx.jsx
+│    │       ├── HastaListe.jsx
+│    │       
+│    ├── helper
+│    │       ├── logo.png
+│    │       ├── data.js
+│    │----pages
+|    |       |---Home.jsx
+│    │       
+│    ├── App.js
+│    ├── App.css
+│    ├── index.js
+│    └── index.css
+├── .gitignore
+├── package-lock.json
+├── package.json
+└── README.md
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `yarn build`
+## Project Features
+- **Add Appointments**: Users can add new appointments, which are saved as objects in the state and displayed in a list.
+- **View Appointments**: Appointments are displayed with their current status (completed or not).
+- **Check/Uncheck Appointments**: Users can mark appointments as completed or uncompleted, with the UI updating accordingly.
+- **Delete Appointments**: Users can remove appointments from the list.
+- **Local Storage**: Appointments are persisted in Local Storage, ensuring that they remain even after the page is refreshed.
+- **Responsive Design**: The app is styled using CSS to ensure it is responsive and user-friendly.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Outcome
+![arzt-termin-app](https://github.com/user-attachments/assets/10b6f922-6240-4965-a48c-b08c593c65b4)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## Technologies Used
+- **HTML**: Minimal usage for structuring the React app.
+- **CSS**: Employed for styling and enhancing the visual aspects of the app.
+- **JavaScript (ReactJS)**: Utilized for building the user interface. Key React features include:
+  - State management using `useState`
+  - Event handling (`onClick`, `onChange`)
+  - Local Storage for data persistence
+  - Mapping through state arrays to dynamically render components
+- **date-fns**: Utilized for formatting dates throughout the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Skills Gained
+By developing the “Doctor Appointment App,” I have gained practical experience in:
+- Managing state with `useState` in React components.
+- Handling user interactions such as adding, checking, and deleting appointments.
+- Implementing persistent data storage using Local Storage in a React application.
+- Formatting dates using date-fns to ensure consistency and readability.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+These skills are essential for developing more complex and user-interactive applications in the future.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p align="center"> 🏥 Happy Coding! 🩺 </p>
